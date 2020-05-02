@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+ <properties resource="db.properties" />
+  <context id="context1">
+    <jdbcConnection connectionURL="${jdbc.url}" driverClass="${jdbc.driver}" password="${jdbc.password}" userId="${jdbc.username}" />
+    <javaModelGenerator targetPackage="com.liu.pojo" targetProject="graduationTopicOfDesignSystem/src" >
+         <property name="enableSubPackages" value="true"/>
+         <property name="trimStrings" value="true"/>
+    </javaModelGenerator>
+    
+    <sqlMapGenerator targetPackage="com.liu.mapping" targetProject="graduationTopicOfDesignSystem/src" >
+         <property name="enableSubPackages" value="true"/>
+    </sqlMapGenerator>
+    <javaClientGenerator targetPackage="com.liu.mapping" targetProject="graduationTopicOfDesignSystem/src" type="XMLMAPPER" >
+         <property name="enableSubPackages" value="true"/>
+    </javaClientGenerator>
+    <table schema="graduationdesigntopicselectionsystem" tableName="chooseinftable" domainObjectName="Choose" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+     <table schema="graduationdesigntopicselectionsystem" tableName="collegetable" domainObjectName="College" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+     <table schema="graduationdesigntopicselectionsystem" tableName="gradetable" domainObjectName="Grade"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+     <table schema="graduationdesigntopicselectionsystem" tableName="studentinftable" domainObjectName="Student"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+     <table schema="graduationdesigntopicselectionsystem" tableName="subjecttable" domainObjectName="Subject"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+     <table schema="graduationdesigntopicselectionsystem" tableName="teacherinftable" domainObjectName="Teacher"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+     <table schema="graduationdesigntopicselectionsystem" tableName="usertable" domainObjectName="User" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+     <!-- <table schema="???" tableName="" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table> -->
+  </context>
+</generatorConfiguration>
